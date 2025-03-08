@@ -1,7 +1,7 @@
 import cv2
 import time
 from src.ocr import capture_text
-from src.api import query_grok  # Import only query_grok
+from src.api import query_gpt4, query_grok 
 from src.display import display_results
 
 def main():
@@ -31,14 +31,14 @@ def main():
         if key == 32:  # SPACE key
             last_frame, captured_text = capture_text(cap)
             if captured_text:
-                # Only query Grok since GPT-4 is commented out
+                # Query both GPT-4 and Grok
+                start_time = time.time()
+                gpt4_response = query_gpt4(captured_text)
+                gpt4_time = time.time() - start_time
+                
                 start_time = time.time()
                 grok_response = query_grok(captured_text)
-                end_time = time.time()
-                grok_time = end_time - start_time
-                
-                # Simulate GPT-4 response since it's commented out
-                gpt4_response = {"model": "GPT-4", "answer": "No API key provided (simulated)", "time": 0.01}
+                grok_time = time.time() - start_time
                 
                 last_results = [gpt4_response, grok_response]
                 display_results(last_frame, captured_text, last_results, print_to_console=True, show_continue_prompt=True)
