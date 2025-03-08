@@ -1,0 +1,6 @@
+opencv-python==4.8.1.78
+numpy==1.26.4
+easyocr==1.7.1
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
