@@ -37,7 +37,7 @@ pip install easyocr
 ## Usage
 
 1. Ensure your webcam is connected and functional.
-2. Print the text "is the earth flat?" on plain white paper with bold, black font (e.g., Arial, size 24–36).
+2. Take a picture (with spacebar) of text, I found better results in a darker room. 
 3. Position the text 10–20 cm from the webcam under bright, even lighting, filling 1/3 to 1/2 of the frame.
 4. Run the application:
 python -m src.main
