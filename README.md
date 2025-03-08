@@ -1,12 +1,15 @@
-# TripleCheckCam
+# Photo2Text-AISolver (Shit name idk what else to call this)
+### Inspired from https://x.com/vikvang1/status/1898144704077652443
 
-TripleCheckCam is a Python application designed to capture text from a webcam, process it using OpenCV for image preprocessing, and perform Optical Character Recognition (OCR) with EasyOCR. It simulates a triple-check process for verifying text input, such as "is the earth flat?", without relying on external API keys like GPT-4 or Grok.
+# NOW I TESTED THIS A FEW TIMES AND IT WASN'T PERFECT, ILL KEEP WORKING ON IT BUT IF YOU HAVE BETTER METHODS PLS MAKE A PR. 
+
+This is a Python app. made to capture text from a webcam, process it using OpenCV for image preprocessing, and perform Optical Character Recognition (OCR) with EasyOCR.
 
 ## Features
 - Captures text via webcam using OpenCV.
 - Preprocesses images to reduce noise and isolate text.
 - Uses EasyOCR for accurate text recognition.
-- Displays results in the console, simulating a triple-check process.
+- Displays results in the console.
 - Lightweight and easy to use on Windows.
 
 ---
@@ -18,8 +21,8 @@ TripleCheckCam is a Python application designed to capture text from a webcam, p
 ---
 
 ## Installation
-git clone https://github.com/your-username/TripleCheckCam.git
-cd TripleCheckCam
+git clone https://github.com/your-username/Slothy-Photo2Text-AISolver.git
+cd Slothy-Photo2Text-AISolver
 pip install opencv-python numpy easyocr
 
 
