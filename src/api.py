@@ -15,8 +15,6 @@ except FileNotFoundError:
     OPENAI_API_KEY = None
     GROK_API_KEY = None
 
-# Temporarily comment out query_gpt4 since you don't have OpenAI credits
-'''
 def query_gpt4(question):
     try:
         if not OPENAI_API_KEY:
@@ -43,7 +41,6 @@ def query_gpt4(question):
             return {"model": "GPT-4", "answer": f"Error: {response.status_code}", "time": elapsed_time}
     except Exception as e:
         return {"model": "GPT-4", "answer": f"Failed - {str(e)}", "time": time.time() - start_time}
-'''
 
 def query_grok(question):
     try:
